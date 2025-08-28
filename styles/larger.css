@@ -1,9 +1,21 @@
+:root {
+    --text: #f8f9fa;
+    /* gris muy claro, fondo general */
+    --surface: rgb(201, 199, 199);
+    /* blanco puro para tarjetas, header, footer */
+    --brand: #343a40;
+    /* gris oscuro (para nav, botones, acentos) */
+    --accent: #6c757d;
+    /* gris medio (hover, detalles, bordes) */
+    --bg: #212529;
+    /* casi negro, texto principal */
+}
+
 @media only screen and (min-width: 38rem) {
 
     header,
     main,
-    nav,
-    footer {
+    nav {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -18,10 +30,136 @@
 
     .navigation {
         display: block;
+        background-color: var(--bg);
+
         border-bottom: solid 1px #eee;
     }
 
     .navigation a {
         border: none;
+        color: var(--text);
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    /* SECTIONS */
+
+    .sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        gap: 10px;
+    }
+
+    #about {
+        background-color: var(--surface);
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        border: 1px solid var(--brand);
+        border-radius: 5px;
+
+    }
+
+    #about p {
+        padding: 8px;
+    }
+
+    #about h2 {
+        background-color: var(--bg);
+        text-align: center;
+        margin: 0;
+        color: var(--text)
+    }
+
+    #photo {
+        background-color: var(--surface);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        text-align: center;
+        border: 1px solid var(--brand);
+        border-radius: 5px;
+    }
+
+    #photo h2 {
+        background-color: var(--bg);
+        text-align: center;
+        margin: 0 0 1rem 0;
+        color: var(--text)
+    }
+
+    #photo img {
+        display: block;
+        width: 200px;
+        height: auto;
+        margin-bottom: 1rem;
+        justify-self: center;
+
+    }
+
+    #certificate {
+        background-color: var(--surface);
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        border: 1px solid var(--brand);
+        border-radius: 5px;
+    }
+
+    #certificate h2 {
+        background-color: var(--bg);
+        text-align: center;
+        margin: 0 0 1rem 0;
+        color: var(--text);
+        text-align: center;
+    }
+
+    #certificate ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    #certificate ul .completed {
+        background-color: rgb(176, 248, 176);
+    }
+
+    #certificate ul li {
+        background-color: var(--text);
+        border: 1px solid var(--bg);
+        border-radius: 5px;
+        width: 10rem;
+        height: 2rem;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    #certificate p {
+        text-align: center;
+    }
+
+
+
+
+    .filters {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        height: 44px;
+        width: 15rem;
+    }
+
+    footer {
+        padding: 10px;
+        max-width: 900px;
+        margin: 0.5rem auto;
     }
 }

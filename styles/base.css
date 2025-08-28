@@ -1,14 +1,14 @@
 :root {
-    --bg: #e9ecef;
-    /* background */
-    --surface: #ffffff;
-    /* tarjetas, header, footer */
-    --brand: #0b7cc0;
-    /* links, btn, nav */
-    --accent: #0db36b;
-    /* hover, highlight, completed */
-    --ink: #212529;
-    /* main text */
+    --text: #f8f9fa;
+    /* gris muy claro, fondo general */
+    --surface: rgb(201, 199, 199);
+    /* blanco puro para tarjetas, header, footer */
+    --brand: #343a40;
+    /* gris oscuro (para nav, botones, acentos) */
+    --accent: #6c757d;
+    /* gris medio (hover, detalles, bordes) */
+    --bg: #212529;
+    /* casi negro, texto principal */
 }
 
 * {
@@ -36,14 +36,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: var(--ink);
+    color: var(--bg);
 }
 
 /* Hamburger */
 .hamburger {
     background: none;
     border: none;
-    color: var(--ink);
+    color: var(--bg);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -66,7 +66,10 @@ header span {
 
 .navigation.show {
     display: block;
+    color: var(--text);
 }
+
+
 
 .navigation ul {
     list-style-type: none;
@@ -89,7 +92,12 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: var(--brand);
+
+}
+
+.navigation li.current a {
+    color: var(--text);
 }
 
 .navigation a:hover {
@@ -98,4 +106,147 @@ header span {
 
 h1 {
     margin-left: 10px;
+    color: var(--bg);
+}
+
+
+
+/* SECTIONS */
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#about {
+    background-color: var(--surface);
+    border: 1px solid var(--brand);
+    border-radius: 5px;
+}
+
+#about p {
+    padding: 8px;
+}
+
+#about h2 {
+    background-color: var(--bg);
+    text-align: center;
+    margin: 0;
+    color: var(--text)
+}
+
+#photo {
+    background-color: var(--surface);
+    text-align: center;
+    border: 1px solid var(--brand);
+    border-radius: 5px;
+}
+
+#photo h2 {
+    background-color: var(--bg);
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: var(--text)
+}
+
+#photo img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    justify-self: center;
+
+}
+
+#certificate {
+    background-color: var(--surface);
+    border: 1px solid var(--brand);
+    border-radius: 5px;
+}
+
+#certificate h2 {
+    background-color: var(--bg);
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: var(--text);
+    text-align: center;
+}
+
+#certificate ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#certificate ul .completed {
+    background-color: rgb(176, 248, 176);
+}
+
+#certificate ul li {
+    background-color: var(--text);
+    border: 1px solid var(--bg);
+    border-radius: 5px;
+    width: 15rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+#certificate p {
+    text-align: center;
+}
+
+
+
+
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    margin: 0 1px;
+    height: 44px;
+    width: 15rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--surface);
+    padding: 1rem 10px;
+    text-align: center;
+    border-top: 1px solid #e2e2e2;
+    margin: 5px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: auto;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--surface);
 }

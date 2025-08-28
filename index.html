@@ -42,9 +42,44 @@
 
     <main>
         <h1>Home</h1>
+        <div class="sections">
+            <section class="card" id="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm Marcos Silvera (Uruguay). This is my site for WDD 231. I enjoy teaching math and learning web
+                    development. Here you'll find links to my projects and a dynamic list of certificate courses.</p>
+            </section>
+
+            <section class="card photo" id="photo">
+                <h2>Student Photo</h2>
+                <img src="images/marcos.jpg" alt="My photo">
+            </section>
+
+            <section class="card" id="certificate">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters">
+                    <button id="all" class="btn" aria-pressed="true">All</button>
+                    <button id="cse" class="btn" aria-pressed="false">CSE</button>
+                    <button id="wdd" class="btn" aria-pressed="false">WDD</button>
+                </div>
+                <ul id="course-list" class="courses"></ul>
+                <p class="total-credits">Total Credits: <span id="credits">0</span></p>
+            </section>
+        </div>
+
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Gthub"></a>
+            <a href="https://www.linkedin.com/in/marcos-andr%C3%A9s-silvera/" target="_blank"><img
+                    src="images/linkedin.svg" alt="Linkedin"></a>
+            <a href="https://teams.microsoft.com/v2/" target="_blank"><img src="images/microsoft-teams.svg"
+                    alt="Microsoft teams"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="images/tiktok.svg" alt="TikTok"></a>
+        </div>
+        <p>&copy; <span id="currentyear"> </span> Marcos Silvera | Uruguay</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
