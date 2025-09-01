@@ -71,6 +71,14 @@
     border-radius: 5px;
   }
 
+  #photo img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
   #certificate {
     background-color: var(--surface);
     grid-column: 1 / 3;

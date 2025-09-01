@@ -145,7 +145,7 @@ h1 {
   display: block;
   width: 200px;
   height: auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
 }
 
 #certificate {
