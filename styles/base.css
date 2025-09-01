@@ -7,7 +7,7 @@
 
   --accent: #6c757d;
 
-  --bg: #212529;
+  --bg: #011b34;
 }
 
 * {
@@ -117,6 +117,7 @@ h1 {
 
 #about p {
   padding: 8px;
+  font-weight: bolder;
 }
 
 #about h2 {
@@ -209,6 +210,11 @@ footer {
   text-align: center;
   border-top: 1px solid #e2e2e2;
   margin: 5px 0;
+}
+
+footer p,
+span {
+  font-weight: bold;
 }
 
 .social {
