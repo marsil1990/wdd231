@@ -62,17 +62,6 @@
     border-radius: 5px;
   }
 
-  #about p {
-    padding: 8px;
-  }
-
-  #about h2 {
-    background-color: var(--bg);
-    text-align: center;
-    margin: 0;
-    color: var(--text);
-  }
-
   #photo {
     background-color: var(--surface);
     grid-column: 2 / 3;
@@ -82,43 +71,12 @@
     border-radius: 5px;
   }
 
-  #photo h2 {
-    background-color: var(--bg);
-    text-align: center;
-    margin: 0 0 1rem 0;
-    color: var(--text);
-  }
-
-  #photo img {
-    display: block;
-    width: 200px;
-    height: auto;
-    margin-bottom: 1rem;
-    justify-self: center;
-  }
-
   #certificate {
     background-color: var(--surface);
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     border: 1px solid var(--brand);
     border-radius: 5px;
-  }
-
-  #certificate h2 {
-    background-color: var(--bg);
-    text-align: center;
-    margin: 0 0 1rem 0;
-    color: var(--text);
-    text-align: center;
-  }
-
-  #certificate ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 1rem;
-    justify-content: center;
   }
 
   #certificate ul .completed {
@@ -133,21 +91,6 @@
     height: 2rem;
     text-align: center;
     padding: 0.3rem;
-  }
-
-  #certificate p {
-    text-align: center;
-  }
-
-  .filters {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .btn {
-    height: 44px;
-    width: 15rem;
   }
 
   footer {
