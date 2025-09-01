@@ -1,104 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 231 • Course Home Page</title>
-    <meta
-      name="description"
-      content="Course home page with responsive navigation and dynamic course list for the Web & Computer Programming certificate."
-    />
-    <meta name="author" content="Marcos Silvera" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"
-      rel="stylesheet"
-    >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 231 • Course Home Page</title>
+  <meta name="description"
+    content="Course home page with responsive navigation and dynamic course list for the Web & Computer Programming certificate." />
+  <meta name="author" content="Marcos Silvera" />
 
-    <!-- <link rel="icon" href="favicon.ico" /> -->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"
+    rel="stylesheet">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/dates.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
-  </head>
+  <!-- <link rel="icon" href="favicon.ico" /> -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
 
-  <body>
-    <header>
-      <img src="images/logo.svg" alt="site logo" width="800" height="800" />
-      <span>Marcos Silvera</span>
-      <button
-        id="nav-button"
-        class="hamburger"
-        aria-label="navigation"
-      ></button>
-    </header>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
 
-    <nav id="nav-bar" class="navigation">
-      <ul>
-        <li class="current">
-          <a href="#" class="active" aria-current="page">Home</a>
-        </li>
-        <li><a href="#">Chamber Project</a></li>
-        <li><a href="#">Final Project</a></li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="site logo" width="800" height="800" />
+    <span>Marcos Silvera</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
 
-    <main>
-      <h1>Home</h1>
-      <div class="sections">
-        <section class="card" id="about">
-          <h2>About Me</h2>
-          <p>
-            Hi, I'm Marcos Silvera (Uruguay). This is my site for WDD 231. I
-            enjoy teaching math and learning web development. Here you'll find
-            links to my projects and a dynamic list of certificate courses.
-          </p>
-        </section>
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current">
+        <a href="#" class="active" aria-current="page">Home</a>
+      </li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
 
-        <section class="card photo" id="photo">
-          <h2>Student Photo</h2>
-          <img src="images/marcos.jpg" alt="About me" />
-        </section>
+  <main>
+    <h1>Home</h1>
+    <div class="sections">
+      <section class="card" id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Marcos Silvera (Uruguay). This is my site for WDD 231. I
+          enjoy teaching math and learning web development. Here you'll find
+          links to my projects and a dynamic list of certificate courses.
+        </p>
+      </section>
 
-        <section class="card" id="certificate">
-          <h2>Web Certificate Courses</h2>
-          <div class="filters">
-            <button id="all" class="btn" aria-pressed="true">All</button>
-            <button id="cse" class="btn" aria-pressed="false">CSE</button>
-            <button id="wdd" class="btn" aria-pressed="false">WDD</button>
-          </div>
-          <ul id="course-list" class="courses"></ul>
-          <p class="total-credits">
-            Total Credits: <span id="credits">0</span>
-          </p>
-        </section>
-      </div>
-    </main>
+      <section class="card photo" id="photo">
+        <h2>Student Photo</h2>
+        <img src="images/marcos.jpg" alt="About me" />
+      </section>
 
-    <footer>
-      <div class="social">
-        <a href="https://github.com/" target="_blank"
-          ><img src="images/github.svg" alt="Gthub logo"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/marcos-andr%C3%A9s-silvera/"
-          target="_blank"
-          ><img src="images/linkedin.svg" alt="Linkedin logo"
-        /></a>
-        <a href="https://teams.microsoft.com/v2/" target="_blank"
-          ><img src="images/microsoft-teams.svg" alt="Microsoft teams"
-        /></a>
-        <a href="https://www.tiktok.com/" target="_blank"
-          ><img src="images/tiktok.svg" alt="TikTok logo"
-        /></a>
-      </div>
-      <p>&copy; <span id="currentyear"> </span> Marcos Silvera | Uruguay</p>
-      <p id="lastModified"></p>
-    </footer>
-  </body>
+      <section class="card" id="certificate">
+        <h2>Web Certificate Courses</h2>
+        <div class="filters">
+          <button id="all" class="btn" aria-pressed="true">All</button>
+          <button id="cse" class="btn" aria-pressed="false">CSE</button>
+          <button id="wdd" class="btn" aria-pressed="false">WDD</button>
+        </div>
+        <ul id="course-list" class="courses"></ul>
+        <p class="total-credits">
+          Total Credits: <span id="credits">0</span>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Gthub logo" /></a>
+      <a href="https://www.linkedin.com/in/marcos-andr%C3%A9s-silvera/" target="_blank"><img src="images/linkedin.svg"
+          alt="Linkedin logo" /></a>
+      <a href="https://teams.microsoft.com/v2/" target="_blank"><img src="images/microsoft-teams.svg"
+          alt="Microsoft teams" /></a>
+      <a href="https://www.tiktok.com/" target="_blank"><img src="images/tiktok.svg" alt="TikTok logo" /></a>
+    </div>
+    <p>&copy; <span id="currentyear"> </span> Marcos Silvera | Uruguay</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
 </html>
