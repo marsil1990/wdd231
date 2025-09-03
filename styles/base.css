@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+.card {
+  margin: 5px;
+}
+
 /* HEADER */
 
 header {
@@ -103,6 +107,7 @@ h1 {
 }
 
 /* SECTIONS */
+
 .sections {
   display: flex;
   flex-direction: column;

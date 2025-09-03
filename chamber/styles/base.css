@@ -170,14 +170,6 @@ footer span {
 #sections {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  align-items: center;
-}
-
-/* SECTIONS */
-#sections {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   gap: 5px;
 }
