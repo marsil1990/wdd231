@@ -1,0 +1,93 @@
+[
+  {
+    "name": "DataSur",
+    "tagline": "Analytics & ML for business",
+    "address": "Rambla Gran Bretaña 456, Montevideo",
+    "phone": "+598 2710 2233",
+    "email": "hello@datasur.uy",
+    "website": "https://datasur.uy",
+    "logo": "images/datasur.webp",
+    "membershipLevel": 2,
+    "sector": "Data & Analytics",
+    "stack": ["Python", "Pandas", "TensorFlow"],
+    "city": "Montevideo"
+  },
+  {
+    "name": "NorteAI",
+    "tagline": "AI assistants for support",
+    "address": "Sarandí 999, Rivera",
+    "phone": "+598 4632 7788",
+    "email": "info@norteai.uy",
+    "website": "https://norteai.uy",
+    "logo": "images/norteai.webp",
+    "membershipLevel": 3,
+    "sector": "AI Services",
+    "stack": ["Python", "FastAPI", "OpenAI"],
+    "city": "Rivera"
+  },
+  {
+    "name": "UX Nativa",
+    "tagline": "UX community & workshops",
+    "address": "Ituzaingó 321, Canelones",
+    "phone": "+598 4322 1100",
+    "email": "contact@uxnativa.org",
+    "website": "https://uxnativa.org",
+    "logo": "images/uxnativa.webp",
+    "membershipLevel": 1,
+    "sector": "Design Community",
+    "stack": ["Figma"],
+    "city": "Canelones"
+  },
+  {
+    "name": "Cloud Oriental",
+    "tagline": "DevOps & IaC for SMEs",
+    "address": "Gorlero 1500, Maldonado",
+    "phone": "+598 4222 3344",
+    "email": "ops@cloudoriental.uy",
+    "website": "https://cloudoriental.uy",
+    "logo": "images/cloudoriental.webp",
+    "membershipLevel": 3,
+    "sector": "Cloud & DevOps",
+    "stack": ["AWS", "Terraform", "Docker"],
+    "city": "Maldonado"
+  },
+  {
+    "name": "EduCode Uy",
+    "tagline": "E-learning platforms",
+    "address": "Av. Italia 4532, Montevideo",
+    "phone": "+598 2487 5566",
+    "email": "team@educode.uy",
+    "website": "https://educode.uy",
+    "logo": "images/educode.webp",
+    "membershipLevel": 2,
+    "sector": "EdTech",
+    "stack": ["Vue", "Firebase"],
+    "city": "Montevideo"
+  },
+  {
+    "name": "SegurApp",
+    "tagline": "Pentesting & hardening",
+    "address": "Gral. Flores 1818, Colonia",
+    "phone": "+598 4522 7788",
+    "email": "security@segurapp.uy",
+    "website": "https://segurapp.uy",
+    "logo": "images/segurapp.webp",
+    "membershipLevel": 2,
+    "sector": "Cybersecurity",
+    "stack": ["Go", "Kubernetes"],
+    "city": "Colonia"
+  },
+  {
+    "name": "Frontend Este",
+    "tagline": "Frontend meetups by the coast",
+    "address": "Aníbal Sampayo 77, Rocha",
+    "phone": "+598 4472 1122",
+    "email": "hola@frontendeste.org",
+    "website": "https://frontendeste.org",
+    "logo": "images/frontendeste.webp",
+    "membershipLevel": 1,
+    "sector": "Developer Community",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "city": "Rocha"
+  }
+]
