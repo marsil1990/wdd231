@@ -1,7 +1,8 @@
 @media only screen and (min-width: 650px) {
   header,
   main {
-    max-width: 900px;
+    max-width: 1000px;
+    padding: 5px;
   }
 
   .hamburger {
@@ -78,6 +79,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
     width: 270px;
+    height: auto;
   }
 
   .grid section p {

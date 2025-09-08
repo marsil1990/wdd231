@@ -20,7 +20,7 @@ main,
 header,
 footer {
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
 header {
@@ -30,19 +30,18 @@ header {
   border-bottom: solid 1px var(--surface);
 }
 
-.logo img {
-  width: 60px;
-  height: auto;
-  aspect-ratio: 721/533;
-}
-
 .logo {
   display: flex;
   align-items: center;
 }
 
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
 .logo span {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Hamburger and btn*/
@@ -78,7 +77,6 @@ header {
   display: block;
   color: var(--text);
   width: 60%;
-  margin-top: 20px;
 }
 .name-logo.show {
   display: none;
@@ -119,6 +117,10 @@ header {
 
 .navigation a:hover {
   background-color: var(--accent);
+}
+
+h1 {
+  margin-top: 0;
 }
 
 /* FOOTER */
@@ -181,7 +183,7 @@ footer span {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 300px;
+  width: 270px;
 }
 
 .grid section p {

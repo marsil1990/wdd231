@@ -33,8 +33,8 @@ const displayMembers = (members) => {
     logo.setAttribute("src", `${member.logo}`);
     logo.setAttribute("alt", `${member.name} `);
     web.setAttribute("href", `${member.website}`);
-    logo.setAttribute("width", "200");
-    logo.setAttribute("height", "200");
+    logo.setAttribute("width", "60");
+    logo.setAttribute("height", "60");
     card.appendChild(name);
     card.appendChild(logo);
     card.appendChild(address);
