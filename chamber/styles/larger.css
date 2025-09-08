@@ -58,6 +58,7 @@
 
   .grid section img {
     width: 60px;
+    height: auto;
     margin-top: 2px;
   }
 

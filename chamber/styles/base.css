@@ -21,6 +21,7 @@ header,
 footer {
   margin: 2rem auto;
   padding: 0.5rem 1rem;
+  min-width: 320px;
 }
 
 header {
@@ -38,6 +39,7 @@ header {
 .logo img {
   width: 60px;
   height: auto;
+  aspect-ratio: 60/45;
 }
 
 .logo span {
@@ -84,7 +86,7 @@ header {
 
 .logo.show-img {
   align-items: start;
-  width: 40px;
+  width: 60px;
   height: auto;
 }
 
@@ -184,7 +186,8 @@ footer span {
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 270px;
+  width: 300px;
+  height: auto;
 }
 
 .grid section p {
@@ -201,7 +204,7 @@ footer span {
 }
 
 .grid section img {
-  width: 40px;
+  width: 60px;
   height: auto;
   margin-top: 2px;
 }
