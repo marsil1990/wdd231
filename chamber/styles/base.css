@@ -97,6 +97,7 @@ header {
   width: 100%;
   justify-content: start;
   gap: 5px;
+  text-align: center;
 }
 
 .navigation a {
@@ -226,7 +227,7 @@ footer span {
   background-color: #dceeff;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .list section {
     grid-template-columns: 1fr 1fr 1fr;
   }
