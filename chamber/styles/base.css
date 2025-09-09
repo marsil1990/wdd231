@@ -57,14 +57,18 @@ header {
 
 .hamburger::before {
   content: "\2630";
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 5px;
 }
 
 .hamburger.show::before {
   content: "\00D7";
-  margin-left: 5px;
+  margin-left: 6px;
 }
+
+/* .btn-nav {
+  margin-top: 5px;
+} */
 
 .btn-nav span {
   font-size: 2rem;
