@@ -15,7 +15,6 @@
   main,
   nav {
     max-width: 900px;
-    margin: 0 auto;
   }
 
   header {
@@ -29,7 +28,6 @@
   .navigation {
     display: block;
     background-color: var(--bg);
-
     border-bottom: solid 1px #eee;
   }
 
@@ -52,6 +50,10 @@
     grid-template-rows: 1fr 1fr;
     height: auto;
     gap: 10px;
+  }
+
+  section {
+    height: 100%;
   }
 
   #about {
@@ -77,6 +79,12 @@
     height: auto;
     margin-bottom: 1rem;
     justify-content: center;
+  }
+
+  .btn {
+    margin: 0 1px;
+    height: 44px;
+    width: 15rem;
   }
 
   #certificate {

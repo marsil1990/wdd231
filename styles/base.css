@@ -11,21 +11,26 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
 
-.card {
-  margin: 5px;
+header,
+main,
+nav {
+  min-width: 320px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* HEADER */
-
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
   padding: 5px 0 5px 10px;
-  align-items: end;
+  align-items: center;
   border-bottom: solid 1px #ddd;
   column-gap: 8px;
 }
@@ -72,7 +77,7 @@ header span {
 
 .navigation ul {
   list-style-type: none;
-  margin: 0;
+  margin: 2px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -114,6 +119,11 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
+}
+
+.card {
+  margin: 5px;
 }
 
 #about {
@@ -139,6 +149,8 @@ h1 {
   text-align: center;
   border: 1px solid var(--brand);
   border-radius: 5px;
+  width: 95%;
+  height: auto;
 }
 
 #photo h2 {
@@ -204,7 +216,7 @@ h1 {
 .btn {
   margin: 0 1px;
   height: 44px;
-  width: 15rem;
+  width: 6em;
 }
 
 /* FOOTER */
