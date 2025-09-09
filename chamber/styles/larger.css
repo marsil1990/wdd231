@@ -23,12 +23,9 @@
     flex-direction: row;
     justify-content: end;
   }
-  /* .btn-nav {
-    margin-top: 0;
+  .btn-nav {
+    margin-top: 8px;
   }
-  .btn-nav span {
-    font-size: 2rem;
-  } */
 
   /* SECTIONS */
 

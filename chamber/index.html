@@ -23,10 +23,14 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/indexLarger.css">
+
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -40,9 +44,9 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li>
-                    <a href="#" class="active" aria-current="page">Home</a>
+                    <a href="#" class="current" aria-current="page">Home</a>
                 </li>
-                <li class="current"><a href="">Directory</a></li>
+                <li><a href="">Directory</a></li>
                 <li><a href="">Join</a></li>
                 <li><a href="">Discover</a></li>
             </ul>
@@ -59,65 +63,62 @@
                 <img src="images/hero_small.webp" alt="Personas conectadas en la ciudad" width="768" height="512"
                     type="image/webp">
             </picture>
-
             <div class="hero-text">
-                <h1>Connecting People &amp; Tech in Uruguay</h1>
                 <a class="btn" href="join.hmtl">Join The Chamber</a>
             </div>
         </section>
+        <h1>Home</h1>
+        <div class="main">
+            <section class="events">
+                <h2 id="events-title">Events</h2>
+                <ul>
+                    <li>
+                        <span class="time">Sep 15</span>
+                        Meetup: AI &amp; Startups — Montevideo Tech Hub
+                    </li>
+                    <li>
+                        <span class="time">Sep 28</span>
+                        Workshop: UX Best Practices for SMEs
+                    </li>
+                </ul>
+            </section>
 
-        <section class="events">
-            <h2 id="events-title">Current Events</h2>
-            <ul>
-                <li>
-                    <span class="time">Sep 15</span>
-                    Meetup: AI &amp; Startups — Montevideo Tech Hu
-                </li>
-                <li>
-                    <span class="time">Sep 28</span>
-                    Workshop: UX Best Practices for SMEs
-                </li>
-            </ul>
-        </section>
-
-        <section class="weather">
-            <div id="current-weather">
-                <h2>Current Weather</h2>
-                <div id="weather-icon">
+            <section class="weather">
+                <div id="current-weather">
+                    <h2>Current Weather</h2>
+                    <div class="weatherIcon">
+                        <img id="weather-icon">
+                    </div>
+                    <div class="weather-information">
+                        <ul>
+                            <li id="temp"></li>
+                            <li id="desc"></li>
+                            <li id="high"></li>
+                            <li id="low"></li>
+                            <li id="humidity"></li>
+                            <li id="sunrise"></li>
+                            <li id="sunset"></li>
+                        </ul>
+                    </div>
 
                 </div>
-                <div class="weather-information">
+                <div id="weather-forecast">
+                    <h2>Weather Forecats</h2>
                     <ul>
-                        <li id="temp"></li>
-                        <li id="desc"></li>
-                        <li id="high"></li>
-                        <li id="low"></li>
-                        <li id="humidity"></li>
-                        <li id="sunrise"></li>
-                        <li id="sunset"></li>
+                        <li id="day1">
+                        </li>
+                        <li id="day2">
+                        </li>
+                        <li id="day3"> </li>
                     </ul>
                 </div>
+            </section>
 
-            </div>
-            <div id="weather-forecast">
-                <h2>Weather Forecats</h2>
-                <ul>
-                    <li id="day1">
-                    </li>
-                    <li id="day2">
-                    </li>
-                    <li id="day3"> </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="business">
-            <h2 id="business-name"></h2>
-            <p class="tagline"></p>
-            <div id="specific-business">
-            </div>
-        </section>
-
+            <section class="business">
+                <div id="specific-business">
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
