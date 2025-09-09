@@ -13,7 +13,7 @@ const currentSunRise = document.querySelector("#sunrise");
 const currentHumidity = document.querySelector("#humidity");
 const currentTempLow = document.querySelector("#low");
 const currentSunSet = document.querySelector("#sunset");
-const weatherIcon = document.querySelector("#weather-icon");
+const weatherIconImage = document.querySelector(".weatherIcon");
 
 const urlForecast =
   "https://api.openweathermap.org/data/2.5/forecast?lat=-34.888&lon=-56.155&appid=d6579b8f802b0b37a7e09ccfebc7cd69&units=metric";
@@ -54,6 +54,8 @@ apiForecast();
 
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
+  const weatherIcon = document.createElement("img");
+  weatherIcon.setAttribute("id", "weather-icon");
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   currentdesc.textContent = `${data.weather[0].description}`;
   currentTempHigh.innerHTML = `<span>High: </span>${data.main.temp_max.toFixed(
@@ -81,6 +83,7 @@ function displayResults(data) {
   currentHumidity.innerHTML = `<span>Humidity: </span>${data.main.humidity}%`;
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", `${data.weather[0].description}`);
+  weatherIconImage.appendChild(weatherIcon);
   currentdesc.textContent = `${data.weather[0].description}`;
 }
 

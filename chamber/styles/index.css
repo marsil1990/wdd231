@@ -45,6 +45,11 @@ main {
   color: black;
 }
 
+.weather {
+  width: 100%;
+  max-width: 425px;
+}
+
 .events,
 .weather,
 .weather-forecast {
@@ -76,10 +81,6 @@ main {
 
 .events ul li {
   margin: 1rem;
-}
-
-.weather {
-  width: 100%;
 }
 
 #current-weather {
