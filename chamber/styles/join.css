@@ -155,8 +155,8 @@ h3 {
 @media only screen and (min-width: 650px) {
   main {
     display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
     gap: 5px;
   }
 
@@ -198,7 +198,7 @@ dialog {
 }
 
 dialog::backdrop {
-  background-color: var(--brand);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .dialog-card button {
@@ -223,7 +223,7 @@ dialog::backdrop {
 
 .dialog-card li {
   margin: 10px;
-  font-size: 12;
+  font-size: 12px;
 }
 
 /* THANK YOU */
@@ -290,5 +290,5 @@ dialog::backdrop {
 }
 
 .btn:hover {
-  background: #094a8f;
+  background: var(--brand);
 }

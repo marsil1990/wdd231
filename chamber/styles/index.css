@@ -11,10 +11,10 @@
 
   --text-font: "Roboto", sans-serif;
 }
-header,
+/* header,
 main {
   margin: 0 auto;
-}
+} */
 
 .main {
   margin: 0 auto;
