@@ -7,7 +7,7 @@
     <title>Chamber Tech Uruguay Directory</title>
     <meta name="description" content="Chamber Tech Uruguay promotes local businesses and community events.">
     <meta name="author" content="Marcos Silvera">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap"
@@ -17,14 +17,12 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/indexlarger.css">
+    <link rel="stylesheet" href="styles/join.css">
 
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/levels.js" defer></script>
 </head>
 
 <body>
@@ -38,10 +36,10 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li>
-                    <a href="#" class="current" aria-current="page">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="">Join</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="">Discover</a></li>
             </ul>
         </nav>
@@ -51,8 +49,81 @@
         </div>
     </header>
     <main>
-        
+        <h1>Membreship Application</h1>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>
+                    First Name
+                    <input type="text" name="firstName" id="firstName" required autocomplete="given-name"
+                        title="First Name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="lastName" id="lastName" required autocomplete="family-name"
+                        title="Last Name">
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input type="text" name="OrganizationalTitle" id="orgTitle" required
+                        autocomplete="organization-title" title="Letter, spaces, hyphens; minimum 7 characters"
+                        pattern="(?:[A-Za-z]|-| ){7,}">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" id="email" autocomplete="email" required
+                        placeholder="name@example.com" title="Email address">
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="mobile" id="mobile" required autocomplete="tel" placeholder="123-333-4567"
+                        title="Mobile phone">
+                </label>
+
+                <label>
+                    Organization Name
+                    <input type="text" name="organization" id="organization" required autocomplete="organization"
+                        title="Organization name">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membreship Level</legend>
+
+                <label>
+                    Select Membreship
+                    <select name="membreship" title="Membreship Level">
+                        <option value="NP">NP (Non-profit) -Fee</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+
+                <label>
+                    Organization description
+                    <textarea name="organizationDescription" title="Organization description"
+                        placeholder="Describe your Organization"></textarea>
+                </label>
+            </fieldset>
+
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <!-- CARDS -->
+        <h2 id="levels-title">Membership Levels</h2>
+        <aside class="cards" aria-labelledby="levels-title">
+
+        </aside>
     </main>
+
+    <!-- DIALOGS -->
 
     <footer>
         <p>Chamber Tech Uruguay | Marcos Silvera | contact@chambertech.uy | +598 000 000</p>

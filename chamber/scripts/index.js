@@ -6,8 +6,6 @@ const getMembers = async () => {
   try {
     const response = await fetch("data/members.json"); // Wait for the fetch to complete
     const data = await response.json(); // Wait for the response to be converted to JSON
-    // console.table(data); // Output the fetched data
-    // displayMembersRandom(data); // note that you reference the prophets array of the JSON data object, not just the object
     membersRandom(data);
   } catch (error) {
     console.error("Error fetching data:", error); // Handle any errors

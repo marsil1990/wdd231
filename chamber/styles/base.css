@@ -1,5 +1,5 @@
 :root {
-  --text: black;
+  --text: rgb(4, 3, 69);
 
   --surface: #ecece9;
 
@@ -8,6 +8,8 @@
   --accent: #c6cbd0;
 
   --bg: #011b34;
+
+  --text-font: "Roboto", sans-serif;
 }
 * {
   margin: 0;
