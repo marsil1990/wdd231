@@ -72,12 +72,19 @@ const cse = document.getElementById("cse");
 const wdd = document.getElementById("wdd");
 const all = document.getElementById("all");
 const totalCredits = document.getElementById("credits");
+const subjectNumber = document.getElementById("subjectNumber");
+const creditsCourse = document.getElementById("creditsCourse");
+const certificateCourse = document.getElementById("certificateCourse");
+const description = document.getElementById("description");
+const dialog = document.querySelector("dialog");
+const dialogButton = document.getElementById("dialog-button");
+const technology = document.getElementById("technology");
 
 function course(c) {
   if (c.completed) {
-    return `<li class="completed"> &#10003 ${c.subject} ${c.number} </li>`;
+    return `<li class="completed"><button id="${c.number}" class="courses-button"> &#10003 ${c.subject} ${c.number} </button></li>`;
   } else {
-    return `<li> ${c.subject} ${c.number} </li>`;
+    return `<li><button id="${c.number}" class="courses-button"> ${c.subject} ${c.number}</button></li>`;
   }
 }
 
@@ -112,7 +119,9 @@ function filterWDD(courses) {
 
 function render(html) {
   ul.innerHTML = html;
+  dialogButtons();
 }
+
 all.addEventListener("click", () => {
   filterAll(courses);
 });
@@ -126,3 +135,24 @@ wdd.addEventListener("click", () => {
 });
 
 filterAll(courses);
+
+function dialogButtons() {
+  const courseButtons = document.querySelectorAll(".courses-button");
+  courseButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let c = courses.findIndex((course) => course.number == parseInt(btn.id));
+      console.log(btn.id, courses[c]);
+      subjectNumber.textContent = `${courses[c].subject} ${courses[c].number}`;
+      creditsCourse.textContent = `${courses[c].credits} credits`;
+      certificateCourse.textContent = `Certificate: ${courses[c].certificate}`;
+      description.textContent = `${courses[c].description}`;
+      technology.textContent =
+        "technology: " + courses[c].technology.join(", ");
+      dialog.showModal();
+    });
+  });
+}
+
+dialogButton.addEventListener("click", () => {
+  dialog.close();
+});

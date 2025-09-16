@@ -1,6 +1,6 @@
 @media only screen and (min-width: 780px) {
   .main {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .hero {
@@ -17,12 +17,11 @@
   }
 
   .weather {
-    width: 50%;
-    max-width: 500px;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 5px;
+    margin: 0 10px;
   }
 
   .events {
@@ -53,6 +52,9 @@
     font-size: 12px;
   }
 
+  .business {
+    width: 100%;
+  }
   #specific-business {
     display: flex;
     flex-wrap: wrap;
