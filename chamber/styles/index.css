@@ -138,7 +138,6 @@ main {
   border: 2px solid var(--bg);
   border-radius: 5px;
   width: 100%;
-  height: auto;
   margin: 5px 0;
 }
 #weather-forecast h2 {
