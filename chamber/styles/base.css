@@ -258,5 +258,77 @@ footer span {
 /*=================================== DISCOVER ==================================*/
 /* ============================================================================== */
 
+.discover-page {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "info"
+    "grid";
+  align-items: start;
+  justify-content: center;
+}
 
+#visit-info {
+  grid-area: info;
+}
 
+#visit-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  font-weight: 700;
+}
+
+.place-card {
+  border: 1px solid var(--surface);
+  border-radius: 16px;
+  background: white;
+  display: grid;
+  gap: 0.5rem;
+  grid-area: grid;
+  display: grid;
+  grid-template-areas:
+    "name"
+    "image"
+    "description"
+    "address";
+  margin-bottom: 1rem;
+  width: 305px;
+}
+
+.place-card figure {
+  margin: 0;
+}
+
+.place-card h2 {
+  grid-area: name;
+  margin: 5px;
+}
+
+.place-card img {
+  margin: 0 auto;
+  grid-area: image;
+  overflow: hidden;
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+.place-card p {
+  grid-area: description;
+  margin: 5px;
+}
+
+address {
+  grid-area: address;
+  margin: 5px;
+}
+
+.learn-more {
+  margin: 5px;
+  height: 44px;
+  width: 50%;
+  border-radius: 12px;
+  justify-self: center;
+}
