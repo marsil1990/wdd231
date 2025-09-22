@@ -1,0 +1,58 @@
+[
+  {
+    "id": "rambla-montevideo",
+    "name": "Rambla de Montevideo",
+    "address": "Rambla República del Perú, Montevideo",
+    "description": "La costanera icónica para caminar, correr y disfrutar del atardecer sobre el Río de la Plata.",
+    "image": "images/rambla.webp"
+  },
+  {
+    "id": "ciudad-vieja",
+    "name": "Ciudad Vieja & Puerta de la Ciudadela",
+    "address": "Peatonal Sarandí, Montevideo",
+    "description": "Centro histórico con arquitectura colonial, cafés, ferias y la emblemática Puerta de la Ciudadela.",
+    "image": "images/ciudad-vieja.webp"
+  },
+  {
+    "id": "teatro-solis",
+    "name": "Teatro Solís",
+    "address": "Reconquista 479, Montevideo",
+    "description": "Principal teatro de Uruguay (1856). Visitas guiadas y programación cultural todo el año.",
+    "image": "images/teatro-solis.webp"
+  },
+  {
+    "id": "parque-rodo",
+    "name": "Parque Rodó",
+    "address": "Av. Julio Herrera y Reissig s/n, Montevideo",
+    "description": "Parque arbolado con lago, atracciones y espacios para picnic cerca de la zona universitaria.",
+    "image": "images/parque-rodo.webp"
+  },
+  {
+    "id": "mercado-agricola",
+    "name": "Mercado Agrícola de Montevideo (MAM)",
+    "address": "José L. Terra 2220, Montevideo",
+    "description": "Mercado gastronómico y cultural en un edificio histórico restaurado, ideal para almorzar.",
+    "image": "images/mam.webp"
+  },
+  {
+    "id": "antel-arena",
+    "name": "Antel Arena",
+    "address": "Av. D. A. Larrañaga 5015, Montevideo",
+    "description": "Arena multipropósito para conciertos y eventos deportivos/tecnológicos de gran escala.",
+    "image": "images/antel-arena.webp"
+  },
+  {
+    "id": "parque-roosevelt",
+    "name": "Parque Roosevelt",
+    "address": "Av. de las Américas, Canelones",
+    "description": "Pulmón verde metropolitano, perfecto para actividades al aire libre y deportes.",
+    "image": "images/parque-roosevelt.webp"
+  },
+  {
+    "id": "tech-hub",
+    "name": "Montevideo Tech Hub",
+    "address": "Arenal Grande 1930, Montevideo",
+    "description": "Polo de innovación, startups y networking para la comunidad tecnológica.",
+    "image": "images/techhub.webp"
+  }
+]
