@@ -3,56 +3,64 @@
     "id": "rambla-montevideo",
     "name": "Rambla de Montevideo",
     "address": "Rambla República del Perú, Montevideo",
-    "description": "La costanera icónica para caminar, correr y disfrutar del atardecer sobre el Río de la Plata.",
-    "image": "images/rambla.webp"
+    "description": "The iconic waterfront for walking, running, and enjoying the sunset over the Río de la Plata.",
+    "image": "images/rambla.webp",
+    "wiki": "https://en.wikipedia.org/wiki/Rambla_of_Montevideo"
   },
   {
     "id": "ciudad-vieja",
     "name": "Ciudad Vieja & Puerta de la Ciudadela",
     "address": "Peatonal Sarandí, Montevideo",
-    "description": "Centro histórico con arquitectura colonial, cafés, ferias y la emblemática Puerta de la Ciudadela.",
-    "image": "images/ciudad-vieja.webp"
+    "description": "Historic center with colonial architecture, cafés, markets, and the emblematic Puerta de la Ciudadela.",
+    "image": "images/ciudad-vieja.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Ciudad_Vieja_(Montevideo)"
   },
   {
     "id": "teatro-solis",
     "name": "Teatro Solís",
     "address": "Reconquista 479, Montevideo",
-    "description": "Principal teatro de Uruguay (1856). Visitas guiadas y programación cultural todo el año.",
-    "image": "images/teatro-solis.webp"
+    "description": "Uruguay’s main theater (1856). Guided tours and cultural programming throughout the year.",
+    "image": "images/teatro-solis.webp",
+    "wiki": "https://en.wikipedia.org/wiki/Sol%C3%ADs_Theatre"
   },
   {
     "id": "parque-rodo",
     "name": "Parque Rodó",
     "address": "Av. Julio Herrera y Reissig s/n, Montevideo",
-    "description": "Parque arbolado con lago, atracciones y espacios para picnic cerca de la zona universitaria.",
-    "image": "images/parque-rodo.webp"
+    "description": "Tree-lined park with a lake, attractions, and picnic areas near the university district.",
+    "image": "images/parque-rodo.webp",
+    "wiki": "https://en.wikipedia.org/wiki/Parque_Rod%C3%B3"
   },
   {
     "id": "mercado-agricola",
     "name": "Mercado Agrícola de Montevideo (MAM)",
     "address": "José L. Terra 2220, Montevideo",
-    "description": "Mercado gastronómico y cultural en un edificio histórico restaurado, ideal para almorzar.",
-    "image": "images/mam.webp"
+    "description": "Gastronomic and cultural market in a restored historic building, ideal for lunch or shopping.",
+    "image": "images/mam.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Mercado_Agr%C3%ADcola_de_Montevideo"
   },
   {
     "id": "antel-arena",
     "name": "Antel Arena",
     "address": "Av. D. A. Larrañaga 5015, Montevideo",
-    "description": "Arena multipropósito para conciertos y eventos deportivos/tecnológicos de gran escala.",
-    "image": "images/antel-arena.webp"
+    "description": "Multipurpose arena for concerts and large-scale sports or technology events.",
+    "image": "images/antel-arena.webp",
+    "wiki": "https://en.wikipedia.org/wiki/Antel_Arena"
   },
   {
     "id": "parque-roosevelt",
     "name": "Parque Roosevelt",
     "address": "Av. de las Américas, Canelones",
-    "description": "Pulmón verde metropolitano, perfecto para actividades al aire libre y deportes.",
-    "image": "images/parque-roosevelt.webp"
+    "description": "Metropolitan green lung, perfect for outdoor activities and sports.",
+    "image": "images/parque-roosevelt.webp",
+    "wiki": "https://es.wikipedia.org/wiki/Parque_Franklin_Delano_Roosevelt"
   },
   {
     "id": "tech-hub",
     "name": "Montevideo Tech Hub",
     "address": "Arenal Grande 1930, Montevideo",
-    "description": "Polo de innovación, startups y networking para la comunidad tecnológica.",
-    "image": "images/techhub.webp"
+    "description": "Innovation hub, startups, and networking space for the tech community.",
+    "image": "images/techhub.webp",
+    "wiki": "https://en.wikipedia.org/wiki/Technology_Hub"
   }
 ]

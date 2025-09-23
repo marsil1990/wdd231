@@ -39,10 +39,10 @@ function displayPlaces(places) {
     const btn = document.createElement("button");
     btn.className = "learn-more";
     btn.type = "button";
-    btn.textContent = "Learn More";
-    btn.addEventListener("click", () => {
-      alert(`${place.name}\n\n${place.description}\n\n${place.address}`);
-    });
+    const a = document.createElement("a");
+    a.textContent = "Learn More";
+    a.href = `${place.wiki}`;
+    btn.appendChild(a);
     card.append(h2, figure, address, p, btn);
     grid.append(card);
   });
@@ -55,7 +55,6 @@ function visitMessage() {
 
   if (lastVisit) {
     const difference = now - Number(lastVisit);
-    console.log(now, lastVisit, difference);
     const days = Math.floor(difference / (24 * 60 * 60 * 1000));
     if (difference < 24 * 60 * 60 * 1000) {
       message = "Back so soon! Awesome";

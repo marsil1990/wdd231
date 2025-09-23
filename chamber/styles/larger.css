@@ -11,7 +11,7 @@
 
   --text-font: "Roboto", sans-serif;
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 641px) {
   header,
   main,
   footer {
@@ -40,25 +40,22 @@
     margin-top: 8px;
   }
 
-  /* SECTIONS */
+  /* FOOTER */
 
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 1rem 10px;
     text-align: center;
-    border-top: 1px solid #e2e2e2;
   }
 
-  /* BTN grid and list */
+  /* Directory */
   .grid-list {
     display: flex;
     justify-content: center;
   }
 
-  /* SECTIONS */
   #sections {
     flex-direction: row;
     flex-wrap: wrap;
@@ -66,19 +63,162 @@
   }
 
   .grid section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border: 1px solid gray;
-  }
-
-  .grid section img {
-    width: 60px;
-    height: auto;
-    margin-top: 2px;
   }
 
   .list section {
     height: 40px;
+  }
+
+  /* ============================================================================== */
+  /*=================================== INDEX ==================================*/
+  /* ============================================================================== */
+  .main {
+    justify-content: space-between;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero img {
+    height: auto;
+  }
+
+  .hero-text {
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  .weather {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+
+  .events {
+    width: 40%;
+  }
+
+  #current-weather {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    width: 50%;
+  }
+
+  .weatherIcon img {
+    width: 80px;
+    height: auto;
+  }
+
+  .weather-information li {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  #weather-forecast {
+    width: 50%;
+  }
+
+  #weather-forecast li {
+    font-size: 12px;
+  }
+
+  .business {
+    width: 100%;
+  }
+  #specific-business {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #specific-business section {
+    width: 30%;
+    margin: 0;
+  }
+
+  /* ============================================================================== */
+  /*=================================== JOIN ==================================*/
+  /* ============================================================================== */
+  .main-join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 5px;
+  }
+
+  .main-join h1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: 0.5rem;
+  }
+
+  .main-join h2 {
+    margin: 0.5rem 1rem;
+    grid-column: 2 / 3;
+    /* grid-row: 1 / 2; */
+  }
+  /*------- FORM STYLING ---------------*/
+  .wf1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  /*CARDS*/
+  .main-join .cards {
+    grid-column: 2 / 3;
+    margin-top: 0.6rem;
+  }
+
+  /* ============================================================================== */
+  /*=================================== DICOVER MEDIUM ==================================*/
+  /* ============================================================================== */
+
+  .place-card {
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas:
+      "name name"
+      "image description"
+      "image address"
+      "button button";
+    width: 40rem;
+  }
+
+  .place-card img {
+    width: 200px;
+    height: auto;
+  }
+  .learn-more {
+    grid-area: button;
+    width: 80%;
+  }
+}
+
+/* ============================================================================== */
+/*=================================== DICOVER ==================================*/
+/* ============================================================================== */
+@media only screen and (min-width: 1025px) {
+  .discover-page {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      "info"
+      "cards";
+  }
+
+  #discover-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .place-card {
+    width: 30rem;
+  }
+
+  .place-card img:hover {
+    transform: scale(1.03);
+    filter: contrast(1.05) brightness(1.03);
+    transition: transform 220ms ease, filter 220ms ease;
   }
 }
