@@ -116,25 +116,10 @@ header {
   border-bottom: solid 1px var(--surface);
 }
 
-/* .navigation li .current {
-  background-color: var(--accent);
-}
-
-.navigation li.current a {
-  color: var(--text);
-}
-
-.navigation a:hover {
-  background-color: var(--accent);
-} */
 .navigation a.current,
 .navigation a:hover {
   background: var(--accent);
   color: var(--text);
-}
-
-h1 {
-  margin-top: 0;
 }
 
 /* FOOTER */
@@ -144,7 +129,7 @@ footer {
 
 footer p,
 footer span {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .social {
@@ -520,6 +505,10 @@ h3 {
   border-left: solid 8px green;
 }
 
+#levels-title {
+  margin-top: 1.7rem;
+}
+
 /*CARDS*/
 
 .main-join .card {
@@ -688,33 +677,36 @@ dialog::backdrop {
 
 .discover-page {
   display: grid;
-  gap: 1rem;
   grid-template-areas:
+    "title"
     "info"
     "cards";
-  justify-content: center;
+  /* justify-content: center; */
+  min-height: 3546px;
 }
 
 #visit-info {
   grid-area: info;
-  text-align: center;
+  min-height: 30px;
+  max-width: 400px;
+}
+
+.discover-page h1 {
+  grid-area: title;
+  margin: 0;
 }
 
 #discover-grid {
   grid-area: cards;
 }
 
-#visit-info h2 {
-  margin-bottom: 0.5rem;
-}
-
 .message {
-  font-weight: 700;
+  font-weight: 700px;
 }
 
 .place-card {
   margin: 1rem auto;
-  border: 1px solid var(--surface);
+  border: 1px solid var(--brand);
   border-radius: 16px;
   background: white;
   display: grid;
@@ -726,17 +718,14 @@ dialog::backdrop {
     "image"
     "description"
     "address";
-  width: 305px;
+  width: 310px;
+  min-width: 305px;
 }
 
 .place-card h2 {
   grid-area: name;
   margin: 5px;
-}
-
-.place-card a {
-  text-decoration: none;
-  color: var(--brand);
+  font-size: 15px;
 }
 
 .place-card figure {
@@ -769,9 +758,16 @@ dialog::backdrop {
 }
 
 .learn-more {
-  height: 44px;
-  width: 70%;
+  display: inline-block;
   margin-bottom: 5px;
   border-radius: 12px;
   justify-self: center;
+  padding: 0.5rem 1rem;
+  background: var(--surface);
+  color: var(--brand);
+  text-decoration: none;
+  text-align: center;
+  height: 44px;
+  width: 70%;
+  font-size: 15px;
 }

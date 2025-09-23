@@ -1,5 +1,5 @@
 const grid = document.getElementById("discover-grid");
-const visit = document.querySelector("#visit-info .message");
+const visit = document.querySelector("#visit-info");
 
 async function getPlaces() {
   try {
@@ -12,6 +12,7 @@ async function getPlaces() {
 }
 
 function displayPlaces(places) {
+  let numberOfimages = 1;
   places.forEach((place) => {
     const card = document.createElement("article");
     card.className = "place-card";
@@ -20,7 +21,10 @@ function displayPlaces(places) {
     h2.textContent = place.name;
     const figure = document.createElement("figure");
     const image = document.createElement("img");
-    image.loading = "lazy";
+    if (numberOfimages > 4) {
+      image.loading = "lazy";
+    }
+    numberOfimages++;
     image.src = place.image;
     image.alt = place.name;
     image.width = 300;
@@ -37,12 +41,12 @@ function displayPlaces(places) {
     p.textContent = place.description;
 
     const btn = document.createElement("button");
+    btn.textContent = "Learn More";
     btn.className = "learn-more";
     btn.type = "button";
-    const a = document.createElement("a");
-    a.textContent = "Learn More";
-    a.href = `${place.wiki}`;
-    btn.appendChild(a);
+    btn.addEventListener("click", () => {
+      window.open(place.wiki, "_blank", "noopener");
+    });
     card.append(h2, figure, address, p, btn);
     grid.append(card);
   });
@@ -52,7 +56,8 @@ function visitMessage() {
   const lastVisit = localStorage.getItem("last_visit");
   const now = Date.now();
   let message = "Welcome! Let us know if you have any questions.";
-
+  const span = document.createElement("span");
+  span.className = "message";
   if (lastVisit) {
     const difference = now - Number(lastVisit);
     const days = Math.floor(difference / (24 * 60 * 60 * 1000));
@@ -64,7 +69,8 @@ function visitMessage() {
       message = `You last visited ${days} days ago.`;
     }
   }
-  visit.textContent = message;
+  span.textContent = message;
+  visit.appendChild(span);
   localStorage.setItem("last_visit", String(now));
 }
 

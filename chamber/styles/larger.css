@@ -174,7 +174,15 @@
   /* ============================================================================== */
   /*=================================== DICOVER MEDIUM ==================================*/
   /* ============================================================================== */
-
+  .discover-page {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "info"
+      "cards";
+    justify-content: center;
+    min-height: 2173px;
+  }
   .place-card {
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
@@ -201,10 +209,11 @@
 @media only screen and (min-width: 1025px) {
   .discover-page {
     display: grid;
-    gap: 1rem;
     grid-template-areas:
+      "title"
       "info"
       "cards";
+    min-height: 1178px;
   }
 
   #discover-grid {
