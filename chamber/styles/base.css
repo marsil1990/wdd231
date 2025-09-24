@@ -701,7 +701,7 @@ dialog::backdrop {
 }
 
 .message {
-  font-weight: 700px;
+  font-weight: bold;
 }
 
 .place-card {
