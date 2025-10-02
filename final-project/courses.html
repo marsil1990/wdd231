@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Courses</title>
+    <meta name="description" content="Personalized math courses with a quick diagnostic quiz." />
+    <meta name="author" content="Math Courses" />
+    <link rel="icon" href="images/favicon.webp" type="image/webp" />
+    <meta property="og:title" content="Math Courses — Home" />
+    <meta property="og:description" content="Personalized math courses with a quick diagnostic quiz." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/hero.webp" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+    <script type="module" src="scripts/module-courses.mjs"></script>
+
+</head>
+
+
+
+<body>
+    <dialog id="diag-dialog">
+
+        <h2>Diagnostic Quiz</h2>
+        <div id="quiz"></div>
+        <p id="diag-result"></p>
+        <p id="recommendation"></p>
+
+        <button id="close" value="cancel">Close</button>
+
+    </dialog>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="site logo" width="60" height="45">
+            <span class="name-logo">Math Courses</span>
+        </div>
+
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li><a href="courses.html" class="current" aria-current="page">Courses</a></li>
+                <li><a href="join.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="btn-nav">
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+    </header>
+    <main class="main-courses">
+        <section class="beginner-course">
+            <img src="images/hero_small.webp" alt="Chalkboard with formulas and a teacher" width="500" height="285" />
+            <div class="courses-offer">
+                <h1>Courses & Diagnostic</h1>
+                <p>We have courses for <strong>every level</strong> — take the quiz and get a personalized
+                    recommendation.</p>
+                <button id="start-quiz" class="btn">Start Diagnostic</button>
+            </div>
+        </section>
+        <h2 class="choose-title">Choose your course</h2>
+        <div id="diag">
+            <span id="diagnostic"></span>
+            <button id="btn-close-dg" class="hide">❌</button>
+        </div>
+
+        <section class="filters">
+            <button id="all">All</button>
+            <button id="beginner">Beginner</button>
+            <button id="intermediate">Intermediate</button>
+            <button id="advanced">Advanced</button>
+        </section>
+
+        <section id="courses-cards">
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Math Courses | Marcos Silvera | contact@mathcourses.uy </p>
+        <div class="social">
+            <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="Gthub logo" width="25"
+                    height="25"></a>
+            <a href="https://www.linkedin.com/in/marcos-andr%C3%A9s-silvera/" target="_blank"><img
+                    src="images/linkedin.svg" alt="Linkedin logo" width="25" height="25"></a>
+            <a href="#" target="_blank"><img src="images/microsoft-teams.svg" alt="TikTok logo" width="25"
+                    height="25"></a>
+
+        </div>
+        <div class="footer-year">
+            <p>WDD231 Final Project &copy; <span id="currentyear"> </span> Math Courses
+            </p>
+            <p id="lastModified"></p>
+        </div>
+        <a href="https://www.loom.com/embed/56bfeed284934e8cbdc19dce0f4f5faf?sid=b0524230-6557-40c6-9bff-12ee8408666e"
+            target="_blank" rel="noopener noreferrer">
+            Watch Project Video </a>
+    </footer>
+</body>
+
+</html>

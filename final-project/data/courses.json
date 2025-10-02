@@ -1,0 +1,158 @@
+{
+  "Beginner": [
+    {
+      "id": 1,
+      "title": "Variables & Expressions",
+      "level": "Beginner",
+      "duration": 35,
+      "topic": "Algebra",
+      "image": "images/beginner_variables_and_expresions.webp",
+      "summary": "Understand variables, constants, and how to build and evaluate expressions.",
+      "description": "In this course you will learn the foundational concepts of algebra by exploring how variables represent unknown quantities, how constants remain fixed, and how mathematical expressions are built and simplified. You’ll practice substituting values, evaluating expressions, and understanding how these skills are used to solve real-world problems."
+    },
+    {
+      "id": 2,
+      "title": "Linear Equations",
+      "level": "Beginner",
+      "duration": 40,
+      "topic": "Algebra",
+      "image": "images/beginner_linear_equations.webp",
+      "summary": "Solve first-degree equations and practice balance strategies.",
+      "description": "This course focuses on solving linear equations step by step. You will practice using the balance method to isolate variables, understand the meaning of equality, and work with real-world applications such as financial planning and problem-solving in everyday scenarios. It lays the groundwork for more Advanced algebraic methods."
+    },
+    {
+      "id": 3,
+      "title": "Angles & Triangles",
+      "level": "Beginner",
+      "duration": 30,
+      "topic": "Geometry",
+      "image": "images/beginner_angles_triangles.webp",
+      "summary": "Explore basic angle relationships and triangle properties.",
+      "description": "In this course, you will study the properties of angles and different types of triangles. You’ll learn about complementary and supplementary angles, interior and exterior angles, and how to classify triangles by sides and angles. Real-life applications such as architecture and design are explored through examples and practice problems."
+    },
+    {
+      "id": 4,
+      "title": "Prime Factorization",
+      "level": "Beginner",
+      "duration": 25,
+      "topic": "Number Theory",
+      "image": "images/beginner_prime_factorization.webp",
+      "summary": "Break numbers into prime factors and apply factor trees.",
+      "description": "This course introduces prime numbers and the process of prime factorization. You will learn to decompose numbers into their prime factors using factor trees and explore why this concept is essential in number theory, cryptography, and simplifying fractions. Interactive exercises help you strengthen number sense and analytical skills."
+    },
+    {
+      "id": 5,
+      "title": "Introduction to Functions",
+      "level": "Beginner",
+      "duration": 35,
+      "topic": "Functions",
+      "image": "images/beginner_introduction_functions.webp",
+      "summary": "Learn the idea of a function, domain, range, and notation f(x).",
+      "description": "This course provides a first look at functions as mathematical machines that take inputs and produce outputs. You will study function notation, domain, range, and how functions describe real-world relationships. Through graphs and tables, you’ll learn to recognize functions and distinguish them from general relations."
+    }
+  ],
+  "Intermediate": [
+    {
+      "id": 1,
+      "title": "Systems of Equations",
+      "level": "Intermediate",
+      "duration": 45,
+      "topic": "Algebra",
+      "image": "images/intermediate_systems_equations.webp",
+      "summary": "Solve systems by substitution and elimination; interpret solutions.",
+      "description": "In this course, you’ll explore systems of linear equations and how they can represent multiple constraints at once. You will learn methods such as substitution and elimination to solve them, and interpret solutions as points of intersection. Applications include budgeting, planning, and solving problems with multiple variables."
+    },
+    {
+      "id": 2,
+      "title": "Quadratic Equations",
+      "level": "Intermediate",
+      "duration": 50,
+      "topic": "Algebra",
+      "image": "images/intermediate_quadratic_equations.webp",
+      "summary": "Factor, complete the square, and use the quadratic formula.",
+      "description": "This course focuses on quadratic equations and the different techniques to solve them. You will practice factoring, completing the square, and applying the quadratic formula. Graphical interpretations of parabolas will help you understand how quadratic equations model motion, area problems, and other real-world phenomena."
+    },
+    {
+      "id": 3,
+      "title": "Pythagorean Theorem",
+      "level": "Intermediate",
+      "duration": 30,
+      "topic": "Geometry",
+      "image": "images/intermediate_pythagorean_theorem.webp",
+      "summary": "Use a² + b² = c² to solve right triangle problems and distances.",
+      "description": "This course introduces one of the most important results in geometry: the Pythagorean Theorem. You will learn to apply it to right triangles, distance problems on the coordinate plane, and even in practical contexts like navigation and construction. Interactive examples will strengthen your understanding of its applications."
+    },
+    {
+      "id": 4,
+      "title": "Probability Basics",
+      "level": "Intermediate",
+      "duration": 35,
+      "topic": "Probability",
+      "image": "images/intermediate_probability_basics.webp",
+      "summary": "Compute simple probabilities, complements, and compound events.",
+      "description": "This course explores the fundamental rules of probability. You’ll study experiments, sample spaces, and events, learning how to calculate probabilities of simple and compound events. Practical examples include games of chance and predicting everyday outcomes, helping you develop reasoning about uncertainty and risk."
+    },
+    {
+      "id": 5,
+      "title": "Descriptive Statistics",
+      "level": "Intermediate",
+      "duration": 40,
+      "topic": "Statistics",
+      "image": "images/intermediate_descriptive_statistics.webp",
+      "summary": "Mean, median, mode; visualize data with charts and boxplots.",
+      "description": "In this course, you’ll explore methods for summarizing and describing data. You will calculate measures of central tendency (mean, median, mode) and dispersion, and use graphical representations such as histograms and boxplots. These tools are essential for interpreting surveys, experiments, and everyday information."
+    }
+  ],
+  "Advanced": [
+    {
+      "id": 1,
+      "title": "Exponential Functions",
+      "level": "Advanced",
+      "duration": 40,
+      "topic": "Functions",
+      "image": "images/advanced_exponential_functions.webp",
+      "summary": "Model growth/decay, compare bases, and interpret y=e^x.",
+      "description": "This course covers exponential functions, which are central in modeling population growth, radioactive decay, and finance. You’ll explore graphs of exponential functions, understand the role of different bases, and see why e is a fundamental constant in mathematics and science."
+    },
+    {
+      "id": 2,
+      "title": "Trigonometry Essentials",
+      "level": "Advanced",
+      "duration": 45,
+      "topic": "Trigonometry",
+      "image": "images/advanced_trigonometry_essentials.webp",
+      "summary": "Sine, cosine, tangent; right-triangle problems and ratios.",
+      "description": "This course introduces the core ideas of trigonometry. You will study sine, cosine, and tangent ratios, and learn to apply them to right triangle problems and real-world contexts such as navigation, physics, and engineering. Graphical approaches will help you visualize periodic relationships."
+    },
+    {
+      "id": 3,
+      "title": "Combinatorics",
+      "level": "Advanced",
+      "duration": 45,
+      "topic": "Counting",
+      "image": "images/advanced_combinatorics.webp",
+      "summary": "Counting principles, permutations and combinations.",
+      "description": "In this course, you’ll explore the mathematics of counting efficiently. Topics include the fundamental counting principle, factorials, permutations, and combinations. These tools are widely used in probability, computer science, and solving complex arrangement and selection problems."
+    },
+    {
+      "id": 4,
+      "title": "Logarithms",
+      "level": "Advanced",
+      "duration": 40,
+      "topic": "Functions",
+      "image": "images/advanced_logarithms.webp",
+      "summary": "Properties of logs, change of base, and solving log equations.",
+      "description": "This course explores logarithms as the inverse of exponential functions. You’ll learn their properties, how to change bases, and apply them to solve equations. Real-world applications include measuring earthquake intensity, sound levels, and financial growth rates."
+    },
+    {
+      "id": 5,
+      "title": "Introduction to Limits",
+      "level": "Advanced",
+      "duration": 50,
+      "topic": "Calculus",
+      "image": "images/advanced_introduction_limits.webp",
+      "summary": "The concept of a limit, one-sided limits, and notation.",
+      "description": "This course introduces the foundational concept of limits in calculus. You will learn to interpret limits graphically and numerically, explore one-sided limits, and understand how limits underpin continuity and derivatives. These ideas prepare you for deeper studies in calculus and analysis."
+    }
+  ]
+}

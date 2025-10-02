@@ -1,0 +1,121 @@
+:root {
+  --primary: #0d6efd; /* headings, accents, buttons */
+  --accent: #20c997; /* highlights, links, badges */
+  --text: #0b132b; /* body text */
+  --muted: #6c757d; /* helper text */
+  --surface: #ffffff; /* cards */
+  --bg: #f7f9fc; /* page background */
+}
+
+@media only screen and (min-width: 641px) {
+  header,
+  main,
+  footer {
+    max-width: 1000px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    background-color: var(--surface);
+    width: 70%;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    justify-content: end;
+  }
+  .btn-nav {
+    margin-top: 8px;
+  }
+
+  /* FOOTER */
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ============================================================================== */
+  /*=================================== INDEX ==================================*/
+  /* ============================================================================== */
+  .main {
+    justify-content: space-between;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero img {
+    height: auto;
+  }
+
+  .hero-text {
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  #home-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  /* COURSES */
+  .main-courses {
+    height: 1778.2px;
+  }
+
+  .main-BIA {
+    height: 887.2px;
+  }
+  .filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .beginner-course {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--primary);
+  }
+  .beginner-course img {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 500/285;
+    padding-right: 0.5rem;
+    border-right: 2px solid var(--primary);
+  }
+
+  .courses-offer {
+    margin-left: 1rem;
+  }
+
+  .choose-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  article:hover {
+    transform: scale(1.13);
+    filter: contrast(1.05) brightness(1.03);
+    transition: transform 220ms ease, filter 220ms ease;
+  }
+}
