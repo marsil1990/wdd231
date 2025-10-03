@@ -7,11 +7,24 @@
   --bg: #f7f9fc; /* page background */
 }
 
+@media only screen and (min-width: 636px) {
+  .main-courses {
+    height: 3338px;
+  }
+}
+
 @media only screen and (min-width: 641px) {
   header,
   main,
   footer {
     max-width: 1000px;
+  }
+  .main-courses {
+    height: 3000px;
+  }
+
+  .main-BIA {
+    height: 1500px;
   }
 
   .hamburger {
@@ -74,13 +87,7 @@
   }
 
   /* COURSES */
-  .main-courses {
-    height: 1778.2px;
-  }
 
-  .main-BIA {
-    height: 887.2px;
-  }
   .filters {
     display: flex;
     flex-direction: row;
@@ -90,7 +97,19 @@
   }
 }
 
+@media only screen and (min-width: 938px) {
+  .main-courses {
+    height: 2100px;
+  }
+  .main-BIA {
+    height: 1090px;
+  }
+}
+
 @media only screen and (min-width: 990px) {
+  .main-courses {
+    height: 1800px;
+  }
   .beginner-course {
     display: flex;
     flex-wrap: wrap;

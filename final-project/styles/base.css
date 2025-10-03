@@ -238,11 +238,11 @@ footer span {
 /* ============================= COURSES ============================== */
 /* ================================================================= */
 .main-courses {
-  height: 5157px;
+  max-height: 5502px;
 }
 
 .main-BIA {
-  height: 2245px;
+  height: 2300px;
 }
 
 .beginner-course {
